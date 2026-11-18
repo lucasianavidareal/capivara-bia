@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><script src="https://myhub.ia.br/canvas-vendor/tailwind.js"></script>
+<head>
+<script src="https://myhub.ia.br/canvas-vendor/tailwind.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contador de Cliques</title>
@@ -17,22 +18,22 @@
     </div>
   </div>
   <script>
-    let contagem = 0;
+    let count = 0;
     const contadorEl = document.getElementById('contador');
     const btnClique = document.getElementById('btnClique');
     const btnReset = document.getElementById('btnReset');
 
     function atualizar() {
-      contadorEl.textContent = contagem;
+      contadorEl.textContent = count;
     }
 
     btnClique.addEventListener('click', () => {
-      contagem++;
+      count++;
       atualizar();
     });
 
     btnReset.addEventListener('click', () => {
-      contagem = 0;
+      count = 0;
       atualizar();
     });
   </script>
